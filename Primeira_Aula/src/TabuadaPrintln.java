@@ -1,10 +1,10 @@
 import java.util.Scanner;
-public class CalculadoraTabuada {
+public class TabuadaPrintln {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Informe um numero: ");
+		System.out.println("Informe um número: ");
 		double numero = scan.nextDouble();
 		
 		int x = 0;

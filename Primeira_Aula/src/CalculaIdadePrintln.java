@@ -1,6 +1,6 @@
 
 import java.util.Scanner;
-public class CalculoIdade {
+public class CalculaIdadePrintln {
 	
 	public static void main(String[] args) {
 		Scanner anos = new Scanner(System.in);
@@ -10,10 +10,10 @@ public class CalculoIdade {
 		int atual = anos.nextInt();
 		
 		atual -= nasc;
-		System.out.println("Voce atualmente possui: " + atual + " anos");
+		System.out.println("Você atualmente possui: " + atual + " anos");
 		int fim = 2050;
 		fim -= nasc;
-		System.out.println("Em 2050 voce tera: " + fim + " anos");
+		System.out.println("Em 2050 você terá: " + fim + " anos");
 		
 		
 

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class CalculadoraFahrenheit {
+public class CalculaFahrenheitPrintln {
 
 	public static void main(String[] args) {
 		Scanner scan= new Scanner(System.in);

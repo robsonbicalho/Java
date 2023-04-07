@@ -1,5 +1,5 @@
 import javax.swing.JOptionPane;
-public class CalculaEsfera {
+public class CalculaEsferaJOP {
 
 	public static void main(String[] args) {
 		
@@ -11,7 +11,7 @@ public class CalculaEsfera {
 		double volume = (Math.PI * Math.pow(Draio, 3) * 3 / 4);
 		
 		JOptionPane.showMessageDialog(null, "O comprimento vale: " + comprimento);
-		JOptionPane.showMessageDialog(null, "A area vale: " + area);
+		JOptionPane.showMessageDialog(null, "A área vale: " + area);
 		JOptionPane.showMessageDialog(null, "O volume vale: " + volume);
 	}
 

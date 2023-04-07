@@ -1,5 +1,5 @@
 import javax.swing.JOptionPane;
-public class CalculaAreaLosango {
+public class CalculaAreaLosangoJOP {
 
 	public static void main(String[] args) {
 		

@@ -1,15 +1,15 @@
 import javax.swing.JOptionPane;
-public class CalculaSalariosMinimos {
+public class CalculaSalariosMinimosJOP {
 
 	public static void main(String[] args) {
 		
-		String sminimo = JOptionPane.showInputDialog(null, "Informe o valor atual do salario minimo");
-		String sfuncionario = JOptionPane.showInputDialog(null, "Informe o valor do salario");
+		String sminimo = JOptionPane.showInputDialog(null, "Informe o valor atual do salário mínimo");
+		String sfuncionario = JOptionPane.showInputDialog(null, "Informe o valor do salário");
 		
 		double Dsminimo = Double.parseDouble(sminimo);
 		double Dsfuncionario = Double.parseDouble(sfuncionario);
 		double qtsmin = Dsfuncionario /= Dsminimo;
-		JOptionPane.showMessageDialog(null, "O salario informado equivale a " + qtsmin + " salarios minimos");
+		JOptionPane.showMessageDialog(null, "O salário informado equivale a " + qtsmin + " salários mínimos");
 		
 
 	}

@@ -1,6 +1,6 @@
 
 import javax.swing.JOptionPane;
-public class CalculaIdade {
+public class CalculaIdade2050JOP {
 	
 	public static void main(String[] args) {
 		String InNasc = JOptionPane.showInputDialog(null, "Digite sua data de nascimento");
@@ -9,10 +9,10 @@ public class CalculaIdade {
 		double DtAtual = Double.parseDouble(InAtual);
 		
 		DtAtual -= DtNasc;
-		JOptionPane.showMessageDialog(null, "Voce atualmente possui: " + DtAtual + " anos");
+		JOptionPane.showMessageDialog(null, "Você atualmente possui: " + DtAtual + " anos");
 		int fim = 2050;
 		fim -= DtNasc;
-		JOptionPane.showMessageDialog(null, "Em 2050 voce tera: " + fim + " anos");
+		JOptionPane.showMessageDialog(null, "Em 2050 você terá: " + fim + " anos");
 		
 		
 

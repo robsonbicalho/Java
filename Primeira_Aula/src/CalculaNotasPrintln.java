@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class CalculadorDeNotas {
+public class CalculaNotasPrintln {
 
 	public static void main(String[] args) {
 		Scanner notas = new Scanner(System.in);
@@ -10,7 +10,7 @@ public class CalculadorDeNotas {
 		double nota2 = notas.nextDouble();
 		System.out.println("Digite a terceira nota");
 		double nota3 = notas.nextDouble();
-		System.out.printf("Media aritmetica = %2.2f\n", (nota1 + nota2 + nota3) / 3);
+		System.out.printf("Media aritmética = %2.2f\n", (nota1 + nota2 + nota3) / 3);
 
 	}
 

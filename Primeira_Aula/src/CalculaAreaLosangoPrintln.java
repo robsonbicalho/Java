@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class CalculadoraArea {
+public class CalculaAreaLosangoPrintln {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);

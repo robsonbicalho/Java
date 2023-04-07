@@ -1,5 +1,5 @@
 import javax.swing.JOptionPane;
-public class CalculaFahrenheit {
+public class CalculaFahrenheitJOP {
 
 	public static void main(String[] args) {
 		

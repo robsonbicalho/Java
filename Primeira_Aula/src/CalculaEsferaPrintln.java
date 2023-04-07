@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class CalculadorEsfera {
+public class CalculaEsferaPrintln {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -12,7 +12,7 @@ public class CalculadorEsfera {
 		double volume = (Math.PI * Math.pow(raio, 3) * 3 / 4);
 		
 		System.out.println("O comprimento vale: " + comprimento);
-		System.out.println("A area vale: " + area);
+		System.out.println("A área vale: " + area);
 		System.out.println("O volume vale: " + volume);
 	}
 

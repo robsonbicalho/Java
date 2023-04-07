@@ -1,16 +1,16 @@
 import java.util.Scanner;
-public class CalculadoraCotacao {
+public class CalculaDolaresPrintln {
 
 	public static void main(String[] args) {
 		Scanner dinheiro = new Scanner(System.in);
 		
-		System.out.println("Digite a cotacao do dolar");
+		System.out.println("Digite a cotação do dólar");
 		double CotDolar = dinheiro.nextDouble();
-		System.out.println("Digite a quantidade de dolares que voce possui");
+		System.out.println("Digite a quantidade de dólares que você possui");
 		double QntDolar = dinheiro.nextDouble();
 		
 		double QntReais = QntDolar *= CotDolar;
-		System.out.println("Voce possui: " + QntReais + " Reais");
+		System.out.println("Você possui: " + QntReais + " Reais");
 
 	}
 

@@ -1,5 +1,5 @@
 import javax.swing.JOptionPane;
-public class CalculaNotas {
+public class CalculaNotasJOP {
 
 	public static void main(String[] args) {
 		
@@ -13,7 +13,7 @@ public class CalculaNotas {
 		
 		double MediaAritmetica = (Dnota1 + Dnota2 + Dnota3) / 3;
 		
-		JOptionPane.showMessageDialog(null, "Media aritmetica das notas: " + MediaAritmetica);
+		JOptionPane.showMessageDialog(null, "Media aritmética das notas: " + MediaAritmetica);
 
 	}
 

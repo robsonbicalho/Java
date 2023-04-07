@@ -1,10 +1,10 @@
 import javax.swing.JOptionPane;
-public class CalculaTabuada {
+public class TabuadaJOP {
 
 	public static void main(String[] args) {
 		
 		
-		String numero = JOptionPane.showInputDialog(null, "Informe um numero: ");
+		String numero = JOptionPane.showInputDialog(null, "Informe um número: ");
 		
 		double Dnumero = Double.parseDouble(numero);
 		int x = 0;

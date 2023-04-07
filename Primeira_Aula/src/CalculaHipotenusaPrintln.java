@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class CalculadoraHipotenusa {
+public class  CalculaHipotenusaPrintln {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -12,7 +12,7 @@ public class CalculadoraHipotenusa {
 		double a = Math.sqrt(Math.pow(b, 2) + Math.pow(c, 2));
 		
 		if ( b + c < a || a + c < b || a + b < c || b == 0 || c == 0 )  { 
-		System.out.println("O triangulo nao satisfaz as condicoes de existencia");
+		System.out.println("O triângulo não satisfaz as condições de existência");
 		}
 		else { 
 			System.out.println("A hipotenusa vale: " + a);
