@@ -1,35 +1,39 @@
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 public class MatriculaNota {
 
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
+		String entrada;
+		int matricula;
+		double nota1, nota2, nota3;
 		
-		System.out.println("Informe a matrícula: ");
-		int matricula = input.nextInt();
+		entrada = JOptionPane.showInputDialog("Informe a matrícula: ");
+		matricula = Integer.parseInt(entrada);
 		
 		while (matricula >=0) {
-			System.out.println("Informe as três notas: ");
-			double nota1 = input.nextInt();
-			double nota2 = input.nextInt();
-			double nota3 = input.nextInt();
+			entrada = JOptionPane.showInputDialog("Informe a primeira nota: ");
+			nota1 = Double.parseDouble(entrada);
+			entrada = JOptionPane.showInputDialog("Informe a segunda nota: ");
+			nota2 = Double.parseDouble(entrada);
+			entrada = JOptionPane.showInputDialog("Informe a terceira nota: ");
+			nota3 = Double.parseDouble(entrada);
 			
 			double media = (nota1 + nota2 + nota3)/3;
 			
 			 if (media >= 70.0) {
-	                System.out.println("Aluno aprovado!");
+	                JOptionPane.showMessageDialog(null, "Aluno aprovado!");
 	         } 
 			 else if (media >= 60.0) {
-	                System.out.println("Aluno em recuperação!");
+				 JOptionPane.showMessageDialog(null, "Aluno em recuperação!");
 	         } 
 			 else {
-	                System.out.println("Aluno reprovado!");
+				 JOptionPane.showMessageDialog(null, "Aluno reprovado!");
 	         }
 			 
-			 System.out.println("Informe a matrícula: ");
-				matricula = input.nextInt();
+			 entrada = JOptionPane.showInputDialog("Informe a matrícula: ");
+				matricula = Integer.parseInt(entrada);
 				
 		}
-		System.out.println("Programa encerrado");
+		JOptionPane.showMessageDialog(null, "Programa encerrado");
 	}
 
 }

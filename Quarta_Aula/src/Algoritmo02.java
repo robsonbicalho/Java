@@ -44,7 +44,7 @@ public class Algoritmo02 {
                 entrada = "sim";
             else if (resp == JOptionPane.NO_OPTION)
                 entrada = "não";
-        } while (entrada.equalsIgnoreCase("s") || entrada.equalsIgnoreCase("sim"));
+        } while (entrada.equalsIgnoreCase("sim"));
         System.exit(0);
     }
 }
