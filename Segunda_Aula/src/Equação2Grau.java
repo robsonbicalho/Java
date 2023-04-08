@@ -1,11 +1,13 @@
 import java.util.Scanner;
 import java.text.DecimalFormat;
-public class Equa√ß√£o2Grau {
+public class EquaÁ„o2Grau {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		DecimalFormat df = new DecimalFormat("0.00");
+		String confirma;
 		
+		do {
 		System.out.println("Informe os valores de a,b,c");
 		double a = input.nextDouble();
 		double b = input.nextDouble();
@@ -18,24 +20,29 @@ public class Equa√ß√£o2Grau {
 			System.out.println("Coeficientes informados incorretamente");
 		}
 		else if (a == 0 && b != 0) {
-			System.out.println("Esta √© uma equa√ß√£o do primeiro grau");
-			System.out.println("A raiz real da equa√ß√£o vale: x = " + df.format((-c / b)));
+			System.out.println("Esta È uma equaÁ„o do primeiro grau");
+			System.out.println("A raiz real da equaÁ„o vale: x = " + df.format((-c / b)));
 		}
 		else {
-			System.out.println("Esta √© uma equa√ß√£o do segundo grau");
+			System.out.println("Esta È uma equaÁ„o do segundo grau");
 			double delta = Math.pow(b, 2) - (4 * a * c);
 			if (delta < 0) {
-				System.out.println("Esta equa√ß√£o n√£o possui ra√≠zes reais");
+				System.out.println("Esta equaÁ„o n„o possui raÌzes reais");
 			}
 			else if (delta == 0) {
 				double delta0 = (-b) / (2 * a);
-				System.out.println("Esta equa√ß√£o possui duas ra√≠zes reais iguais: " + df.format(delta0)); 
+				System.out.println("Esta equaÁ„o possui duas raÌzes reais iguais: " + df.format(delta0)); 
 			}
 			else {
 				double valorx1 = (-b + Math.sqrt(delta)) / (2 * a);
 				double valorx2 = (-b - Math.sqrt(delta)) / (2 * a);
-				System.out.println("Esta equa√ß√£o possui duas ra√≠zes reais diferentes: " + df.format(valorx1) + " e " + df.format(valorx2));;
+				System.out.println("Esta equaÁ„o possui duas raÌzes reais diferentes: " + df.format(valorx1) + " e " + df.format(valorx2));;
 			}
 		}
+		System.out.println("Gostaria de realizar outro calculo? (Sim ou N„o)");
+		confirma = input.next();
+		
+	} while (confirma.equalsIgnoreCase("sim") || (confirma.equalsIgnoreCase("s")));
+        System.exit(0);
 	}
 }

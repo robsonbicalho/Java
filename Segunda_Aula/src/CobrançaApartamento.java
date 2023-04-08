@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Cobran√ßaApartament {
+public class CobranÁaApartamento {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
@@ -8,45 +8,50 @@ public class Cobran√ßaApartament {
 		System.out.println("1 - Simples");
 		System.out.println("2 - Duplo");
 		int apartamento = input.nextInt();
+		String confirma;
 		
+		do {
 		System.out.println("Informe a quantidade de dias hospedado: ");
 		int dias = input.nextInt();
 		
 		switch (apartamento) {
 		case 1:
 			if (dias <= 0) {
-				System.out.println("Informa√ß√µes invalidas");
+				System.out.println("InformaÁıes invalidas");
 			}
 			else if (dias < 10) {
-				System.out.println("O valor a ser pago √© de: R$" + (dias * 100));
+				System.out.println("O valor a ser pago È de: R$" + (dias * 100));
 			}
 			else if (dias >= 10 && dias <= 15) {
-				System.out.println("O valor a ser pago √© de: R$" + (dias * 90));
+				System.out.println("O valor a ser pago È de: R$" + (dias * 90));
 			}
 			else {
-				System.out.println("O valor a ser pago √© de: R$" + (dias * 80));
+				System.out.println("O valor a ser pago È de: R$" + (dias * 80));
 			}
 		break;
 		case 2:
 			if (dias <= 0) {
-				System.out.println("Informa√ß√µes invalidas");
+				System.out.println("InformaÁıes invalidas");
 			}
 			else if(dias < 10) {
-				System.out.println("O valor a ser pago √© de: R$" + (dias * 140));
+				System.out.println("O valor a ser pago È de: R$" + (dias * 140));
 			}
 			else if (dias >= 10 && dias <= 15) {
-				System.out.println("O valor a ser pago √© de: R$" + (dias * 120));
+				System.out.println("O valor a ser pago È de: R$" + (dias * 120));
 			}
 			else {
-				System.out.println("O valor a ser pago √© de: R$" + (dias * 100));
+				System.out.println("O valor a ser pago È de: R$" + (dias * 100));
 			}
 		break;
 		default:
-			System.out.println("Informa√ß√µes invalidas");
+			System.out.println("InformaÁıes invalidas");
 		break;
 		}
+		System.out.println("Gostaria de continuar? (Sim ou N„o)");
+		confirma = input.next();
 		
-
+	} while (confirma.equalsIgnoreCase("sim") || confirma.equalsIgnoreCase("s"));
+		System.exit(0);
+		
 	}
-
 }

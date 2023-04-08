@@ -31,6 +31,7 @@ public class PesquisaPrefeitura {
 			entrada = "sim";
 		else if (resp == JOptionPane.NO_OPTION)
 			entrada = "não";
+		
 		} while (entrada.equalsIgnoreCase("sim"));
     	System.exit(0);
 	}

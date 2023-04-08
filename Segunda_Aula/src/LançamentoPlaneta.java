@@ -1,29 +1,31 @@
 import java.util.Scanner;
 import java.text.DecimalFormat;
-public class Lan√ßamentoPlaneta {
+public class LanÁamentoPlaneta {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		DecimalFormat df = new DecimalFormat("0,00");
+		String confirma;
 		
+		do {
 		System.out.println("Escolha um dos planetas a seguir (1 a 8)");
-		System.out.println("1 - Merc√∫rio");
-	    System.out.println("2 - V√™nus");
+		System.out.println("1 - Merc˙rio");
+	    System.out.println("2 - VÍnus");
 	    System.out.println("3 - Terra");
 	    System.out.println("4 - Marte");
-	    System.out.println("5 - J√∫piter");
+	    System.out.println("5 - J˙piter");
 	    System.out.println("6 - Saturno");
 	    System.out.println("7 - Urano");
 	    System.out.println("8 - Netuno");
-	    System.out.println("9 - Plut√£o");
+	    System.out.println("9 - Plut„o");
 		int planeta = input.nextInt();
 		
 		if (planeta >= 10) {
-            System.out.println("C√≥digo inv√°lido");
+            System.out.println("CÛdigo inv·lido");
             return;
 		}
 		
-		System.out.println("Digite a velocidade inicial da bola (m/s¬≤)");
+		System.out.println("Digite a velocidade inicial da bola (m/s≤)");
 		double velocidade = input.nextDouble();
 		System.out.println("Digite o instante de tempo (s)");
 		double tempo = input.nextDouble();
@@ -64,11 +66,12 @@ public class Lan√ßamentoPlaneta {
 			case 9:
 				System.out.println("A velocidade vale: " + df.format(velocidade - (0.6 * tempo)));
 				System.out.println("O tempo vale: " + df.format((velocidade * tempo) - ((0.6 * Math.pow(tempo, 2)/2))));
-				break;
-			
-			
+				break;	
 		}
-
+		System.out.println("Gostaria de continuar? (Sim ou N„o)");
+		confirma = input.next();
+		
+	}while (confirma.equalsIgnoreCase("sim") || (confirma.equalsIgnoreCase("s")));
+        System.exit(0);
 	}
-
 }

@@ -1,23 +1,33 @@
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 import java.text.DecimalFormat;
-public class ValorDaFun√ß√£o {
 
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-		DecimalFormat df = new DecimalFormat("0,00");
-		
-		System.out.println("Informe um valor qualquer");
-		double x = input.nextDouble();
-		
-		if (x < -2) {
-			System.out.println("O valor da fun√ß√£o √©: " + df.format(2 * x + 2));
-		}
-		else if (x >= -2 && x < 3) {
-			System.out.println("O valor da fun√ß√£o √©: " + df.format(x * 0 + 3));
-		}
-		else {
-			System.out.println("O valor da fun√ß√£o √©: " + df.format(-x));
-		}
-	}
+public class ValorDaFunÁ„o {
 
+    public static void main(String[] args) {
+        DecimalFormat df = new DecimalFormat("0.00");
+        String entrada = "";
+
+        do {
+        String input = JOptionPane.showInputDialog("Informe um valor qualquer:");
+        double x = Double.parseDouble(input);
+
+        if (x < -2) {
+            JOptionPane.showMessageDialog(null, "O valor da funÁ„o È: " + df.format(2 * x + 2));
+        }
+        else if (x >= -2 && x < 3) {
+            JOptionPane.showMessageDialog(null, "O valor da funÁ„o È: " + df.format(x * 0 + 3));
+        }
+        else {
+            JOptionPane.showMessageDialog(null, "O valor da funÁ„o È: " + df.format(-x));
+        }
+        int confirma = JOptionPane.showConfirmDialog(null, "Gostaria de calcular outro valor? (Sim ou N„o)");
+        if (confirma == JOptionPane.YES_OPTION) {
+        	entrada = "sim";
+        }
+        else if (confirma == JOptionPane.NO_OPTION) {
+        	entrada = "n„o";
+        }
+    } while (entrada.equalsIgnoreCase("sim") || entrada.equalsIgnoreCase("s"));
+        System.exit(0);
+}
 }

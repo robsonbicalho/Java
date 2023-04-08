@@ -1,49 +1,53 @@
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class CalculadoraNÃºmero {
+public class CalculadoraNúmeros {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		DecimalFormat df = new DecimalFormat("0,00");
+		DecimalFormat df = new DecimalFormat("0.00");
+		String confirma;
 		
-		System.out.println("Digite dois nÃºmeros inteiros quaisquer: ");
+		do {
+		System.out.println("Digite dois números inteiros quaisquer: ");
 		double numero1 = input.nextDouble();
 		double numero2 = input.nextDouble();
 		
-		System.out.println("Escolha uma operaÃ§Ã£o: ");
+		System.out.println("Escolha uma operação: ");
 		System.out.println("1 - Soma");
-		System.out.println("2 - MultiplicaÃ§Ã£o");
-		System.out.println("3 - SubtraÃ§Ã£o");
-		System.out.println("4 - DivisÃ£o");
+		System.out.println("2 - Multiplicação");
+		System.out.println("3 - Subtração");
+		System.out.println("4 - Divisão");
 		int operacao = input.nextInt();
 		
 		switch (operacao) {
 			case 1:
-				System.out.println("A soma dos nÃºmeros Ã©: " + df.format(numero1 + numero2));
+				System.out.println("A soma dos números é: " + df.format(numero1 + numero2));
 				break;
 			case 2:
-				System.out.println("A multiplicaÃ§Ã£o dos nÃºmeros Ã©: " + df.format(numero1 * numero2));
+				System.out.println("A multiplicação dos números é: " + df.format(numero1 * numero2));
 				break;
 			case 3:
-				System.out.println("A subtraÃ§Ã£o dos nÃºmeros Ã©: " + df.format(numero1 - numero2));
+				System.out.println("A subtração dos números é: " + df.format(numero1 - numero2));
 				break;
 			case 4:
 				if (numero1 == 0 || numero2 == 0) {
-					System.out.println("A divisÃ£o Ã© invalida");
+					System.out.println("A divisão é invalida");
 					return;
 				}
 				else {
-					System.out.println("A divisÃ£o dos nÃºmeros Ã©: " + df.format(numero1 / numero2));	
+					System.out.println("A divisão dos números é: " + df.format(numero1 / numero2));	
 				}
 				break;
 			default:
-				System.out.println("CÃ³digo invÃ¡lido");
+				System.out.println("Código inválido");
                 break;
 		
 		}
+		System.out.println("Gostaria de realizar outra operação? (Sim ou Não)");
+		confirma = input.next();
 		
-	
+	} while (confirma.equalsIgnoreCase("Sim") || confirma.equalsIgnoreCase("S"));
+	System.exit(0);
 	}
-
 }
