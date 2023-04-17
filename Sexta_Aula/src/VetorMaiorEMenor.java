@@ -16,8 +16,8 @@ public class VetorMaiorEMenor {
 			System.out.print(numeros[c] + " ");
 		}
 		System.out.print("\n" + "O menor e o maior número são, respectivamente: ");
+	
 		Arrays.sort(numeros);
-
 		System.out.print(numeros[0] + " e " + numeros[9]);
 
 	}
