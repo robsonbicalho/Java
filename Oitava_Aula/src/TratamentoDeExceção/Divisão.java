@@ -1,3 +1,4 @@
+package TratamentoDeExceção;
 
 public class Divisão {
 
@@ -6,8 +7,8 @@ public class Divisão {
 		
 		public Divisão(int numerador, int denominador) {
 			
-			if (denominador == 0) {
-				throw new ArithmeticException("O sistema não realiza divisão por zero.");
+			if (denominador == 0 || denominador > numerador) {
+				throw new ArithmeticException("Números inválidos");
 			}
 			else if (numerador < 0) {
 				throw new ArithmeticException("Numerador menor do que zero");
